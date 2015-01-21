@@ -19,7 +19,7 @@ WORKDIR /root
 RUN git clone https://github.com/exvim/main.git
 WORKDIR /root/main
 
-RUN cd ./main/ && sh unix/install.sh && sh update-plugins.sh && sh unix/replace-my-vim.sh
+RUN sh unix/install.sh && sh update-plugins.sh && sh unix/replace-my-vim.sh
 
 RUN mkdir /work
 
